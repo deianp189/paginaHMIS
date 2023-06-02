@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Pagina HMIS Equipo 18</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link href="style.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<header class="header">
+			<div class="container logo-nav-container">
+				<a href="index.html" class="logo">EQUIPO 18</a>
+				<span class="menu-icon">Ver menu</span>
+				<nav class="navigation">
+					<ul class="show">
+						<li><a href="jose.html" class="jose">José Sánchez Hinojo</a></li>
+						<li><a href="deian.html" class="deian">Deian Orlando Petrovics</a></li>
+					</ul>	
+				</nav>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container">
+				<h1>Deian Orlando Petrovics</h1>
+				<p>¡Bienvenidos a la locura maravillosamente ecléctica que es mi vida! Mi nombre es Deian, aunque algunos me llaman "el maestro del multitasking".
+
+					Me encanta ponerme mi cinturón negro de Karate y sentirme como un superhéroe de película de acción, aunque mi mayor adversario suele ser el montón de ropa sucia que tengo en casa. ¿Quién necesita la Liga de la Justicia cuando tienes las habilidades de un guerrero, y el detergente?
+					
+					Eso sí, mi amor por la fuerza y la disciplina no se limita al dojo. También soy un ferviente devoto del gimnasio, lugar donde mi obsesión por los hierros se traduce en levantar barras más pesadas que mi mochila de universidad en época de exámenes. Y créeme, eso es decir algo.
+					
+					Hablando de obsesiones, tengo una pequeña selva urbana en casa. Si, cuido plantas, aunque algunas veces ellas parecen cuidar más de mí, dándome una dosis diaria de paz y frescura. Es como tener un Amazonas personal en mi sala.
+					
+					Aunque, claro, no siempre estoy luchando contra mis calcetines sucios o hablando con mis plantas. A veces me encuentro en un mundo hecho de papel y lápices, dibujando. Es como tener mi propio universo a la punta del lápiz, un lugar donde las leyes de la física las dicto yo.
+					
+					Pero ahí no acaba mi aventura. He decidido lanzarme al estrellato rockero aprendiendo a tocar la guitarra eléctrica. Aún estoy en la etapa de sonar como un gato estrangulado en lugar de Jimmy Hendrix, pero hey, todos los genios tienen un comienzo.
+					
+					Por si no fuera suficiente, también soy estudiante a tiempo parcial. ¡Y qué estudiante! Me gusta vivir al límite, por eso suelo dejar las prácticas para el último día. ¿Quién necesita adrenalina de deportes extremos cuando tienes el terror de entregar un trabajo justo antes de la medianoche?
+					
+					¡Y así es como se vive la vida al estilo Deian! ¿Quién dijo que no se podía tenerlo todo?
+				</p>
+			</div>
+			<div class="imagen">
+				<img src="img/deian.png" alt="Haz la pantalla mas grande" height="500" id="hp"/>
+				<audio id="audio" src="audio.mp3"></audio>
+			</div>
+
+			<script>
+				var imagen = document.getElementById('hp');
+				var audio = document.getElementById('audio');
+				
+				imagen.addEventListener('mouseover', function() {
+					audio.play();
+				});
+				
+				imagen.addEventListener('mouseout', function() {
+					audio.pause();
+					audio.currentTime = 0;
+				});
+
+				</script>
+
+			<div class="enlace">
+				
+				<a href="https://github.com/deianp189">Pagina de Github</a>				
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<p>HMIS EQUIPO 18 - 2023</p>
+			</div>
+		</footer>
+	</body>
+</html>

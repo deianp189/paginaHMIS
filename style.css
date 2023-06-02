@@ -1,0 +1,148 @@
+body {
+    color: #333;
+    margin: 0;
+    background-color: #f3f3f3;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    flex: 1;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #8B4513;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+img:hover {
+    animation: spin 1ms linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+h1 {
+    color: #1e90ff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+p {
+    color: #333;
+    padding: 20px;
+}
+
+p:first-letter {
+    font-size: 120%;
+    color: #1e90ff;
+}
+
+.header {
+    background: black;
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.navigation ul li a {
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+}
+
+.navigation ul li a:hover {
+    background: #4a4a4a;
+    color: white;
+}
+
+.navigation ul li a.deian:hover {
+    background: #ff00db;
+    color: white;
+}
+
+.navigation ul li a.jose:hover {
+    background: #00dbff;
+    color: white;
+}
+
+.logo {
+    letter-spacing: 5px;
+    font-size: 1.3em;
+}
+
+.footer {
+    padding: 1rem 0;
+    text-align: center;
+    background: black;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.main {
+    padding-top: 6rem;
+}
+
+.menu-icon {
+    display: none;
+}
+
+#hp  {
+    text-align: center;
+}
+
+.imagen {
+    width: 100%;
+    text-align: center;
+}
+
+.enlace {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.enlace a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.enlace a:hover {
+    color: #1e90ff;
+}
